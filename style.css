@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.animated_menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #222237;
+    background-image: url("./images/BG@4x-100 1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left bottom;
+    background-blend-mode: overlay;
+}
+.center_circle {
+    position: relative;
+    /*width: 300px;
+    height: 300px;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.center_circle .toggle {
+    position: absolute;
+    width: 242px;
+    height: 242px;
+    background: #00082B;
+    box-shadow: 0px 20px 20px rgba(0,0,0,0.6);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    cursor: pointer;
+    transition: 0.5s;
+    color: #fff;
+    z-index: 10;
+}
+.toggle h4 {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 47px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.toggle p {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.center_circle .border {
+    background:linear-gradient(183.59deg, #A68543 5.79%, #F3E09C 42.28%, #CDB370 81.41%, #2F240E 123.67%);
+    width: 280px;
+    height: 280px;
+    position: absolute;
+    z-index: 1;
+    border-radius: 50%;
+}
+.dotted_border {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    border: 2px dashed #CDB370;
+    border-radius: 50%;
+}
+
+.center_circle li {
+    position: absolute;
+    list-style: none;
+    left: -225px;
+    transform: rotate(calc(360deg / 8 * var(--i)))
+                translateX(40px);
+    transform-origin: 225px;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: 0.5s;
+    z-index: 10;
+}
+.center_circle li::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #CDB370;
+    border-radius: 50%;
+    top: -6px;
+    left: -6px;
+}
+ul.menu {
+    position: absolute;
+    color: #fff;
+}
+.menu li {
+    position: absolute;
+    list-style: none;
+    top: -15px;
+    left: -396px;
+    transform: rotate(calc(360deg / 8 * var(--i))) translateX(40px);
+    transform-origin: 396px;
+    transition: 0.5s;
+    z-index: 10;
+}
+
+.menu li .circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    line-height: 28.15px;
+    color: #fff;
+    transform: rotate(calc(360deg / -8 * var(--i)));
+}
+
+.menu li:nth-child(1) {
+    left: -650px;
+    top: -30px;
+}
+.menu li:nth-child(2) {
+    left: -650px;
+    top: -40px;
+}
+.menu li:nth-child(3) {
+    top: -140px;
+}
+.menu li:nth-child(3) .circle {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.menu li:nth-child(4) {
+    left: -140px;
+    top: -40px;
+}
+.menu li:nth-child(4) .circle, .menu li:nth-child(5) .circle, .menu li:nth-child(6) .circle {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 30px;
+}
+.menu li:nth-child(5) {
+    left: -140px;
+    top: -40px;
+}
+.menu li:nth-child(6) {
+    left: -140px;
+}
+.menu li:nth-child(7) {
+    top: 0px;
+}
+.menu li:nth-child(7) .circle {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 30px;
+}
+.menu li:nth-child(8) {
+    left: -650px;
+}
+
+.menu .circle span {
+    color: #CDB370;
+    background-color: #fff;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.icon_box {
+    position: relative;
+    background-color: #00082B;
+    padding: 12px;
+    margin-left: 20px;
+    border: 2px solid #CDB370;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+ svg {
+    position: absolute;
+    width: 200;
+    height: 200px;
+    z-index: 50;
+    left: -15px;
+    top: -14px;
+    
+}
+ svg circle {
+    fill: none;
+    stroke-width: 6;
+    stroke: #A68543;
+    stroke-dasharray: 255;
+    stroke-dashoffset: 255;
+    animation: anim 0.9s linear forwards;    
+}
+@keyframes anim {
+    100% {
+        stroke-dashoffset: 150;
+    }
+}
