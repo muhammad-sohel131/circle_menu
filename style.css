@@ -162,17 +162,17 @@ ion-icon {
 }
 
 .menu li:nth-child(1) {
-    /* left: -650px;
-    top: -30px; */
+    top: -35px;
+    left: -535px;
 }
 .menu li:nth-child(2) {
     left: -480px;
-    top: 140px;
+    top: 90px;
 }
 .menu li:nth-child(3) {
-    top: 115px;
+    top: 92px;
     left: -494px;
-}
+} 
 .menu li:nth-child(3) .circle {
     display: flex;
     flex-direction: column;
@@ -180,19 +180,20 @@ ion-icon {
 }
 .menu li:nth-child(4) {
     left: -440px;
-    top: 115px;
+    top: 73px;
 }
 .menu li:nth-child(4) .circle, .menu li:nth-child(5) .circle, .menu li:nth-child(6) .circle {
     display: flex;
     flex-direction: row-reverse;
     gap: 30px;
 }
-.menu li:nth-child(5) {
-    left: -440px;
+ .menu li:nth-child(5) {
+    left: -498px;
+    top: -30px;
 }
 .menu li:nth-child(6) {
-    left: -440px;
-    top: -155px;
+    left: -492px;
+    top: -140px;
 }
 .menu li:nth-child(7) {
     top: -210px;
@@ -204,15 +205,15 @@ ion-icon {
     gap: 30px;
 }
 .menu li:nth-child(8) {
-    left: -500px;
-    top: -172px;
+    left: -476px;
+    top: -155px;
 }
 
 .menu .circle span {
     color: #CDB370;
     background-color: #fff;
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -221,7 +222,7 @@ ion-icon {
 .icon_box {
     position: relative;
     background-color: #00082B;
-    padding: 5px;
+    padding: 10px;
     margin-left: 20px;
     border: 2px solid #CDB370;
     border-radius: 50%;
@@ -233,8 +234,8 @@ ion-icon {
     width: 200;
     height: 200px;
     z-index: 50;
-    left: -27px;
-    top: -27px;
+    left: -20px;
+    top: -20px;
     
 }
  svg circle {
