@@ -166,12 +166,12 @@ ion-icon {
     left: -535px;
 }
 .menu li:nth-child(2) {
-    left: -480px;
-    top: 90px;
+    left: -465px;
+    top: 58px;
 }
 .menu li:nth-child(3) {
     top: 92px;
-    left: -494px;
+    left: -490px;
 } 
 .menu li:nth-child(3) .circle {
     display: flex;
@@ -179,8 +179,8 @@ ion-icon {
     gap: 30px;
 }
 .menu li:nth-child(4) {
-    left: -440px;
-    top: 73px;
+    left: -460px;
+    top: 33px;
 }
 .menu li:nth-child(4) .circle, .menu li:nth-child(5) .circle, .menu li:nth-child(6) .circle {
     display: flex;
@@ -192,8 +192,8 @@ ion-icon {
     top: -30px;
 }
 .menu li:nth-child(6) {
-    left: -492px;
-    top: -140px;
+    left: -505px;
+    top: -122px;
 }
 .menu li:nth-child(7) {
     top: -210px;
@@ -205,15 +205,15 @@ ion-icon {
     gap: 30px;
 }
 .menu li:nth-child(8) {
-    left: -476px;
-    top: -155px;
+    left: -470px;
+    top: -132px;
 }
 
 .menu .circle span {
     color: #CDB370;
     background-color: #fff;
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -234,8 +234,8 @@ ion-icon {
     width: 200;
     height: 200px;
     z-index: 50;
-    left: -20px;
-    top: -20px;
+    left: -17px;
+    top: -17px;
     
 }
  svg circle {
